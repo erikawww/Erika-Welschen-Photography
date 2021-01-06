@@ -1,0 +1,15 @@
+//HEADER
+.cabecera{
+    grid-area: header;
+    height: 120px;
+    background-color: $color-fondo;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;    
+    .cabecera__titulo{
+        color: $color-texto;
+        font-size: 4rem;
+        font-weight: 400;
+    }
+}

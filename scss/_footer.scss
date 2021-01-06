@@ -1,0 +1,35 @@
+// FOOTER
+.pie{
+    grid-area: footer;
+    height: 140px;
+    background-color:$color-fondo;
+    .pie__redes{
+        list-style-type: none;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly; 
+        padding: 20px;
+        li{
+            text-decoration: none;
+            font-size: 1.7rem;
+            a{
+                color: $color-texto;
+                text-decoration: none;
+                &:hover{
+                    color: tomato;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    div{
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center; 
+        margin-top: 20px;
+        p{
+            font-size: 1.4rem;
+            color: $color-texto
+        }
+    }
+}

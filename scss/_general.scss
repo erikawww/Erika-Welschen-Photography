@@ -1,0 +1,27 @@
+//ESTILOS GENERALES
+html {
+    font-size: 62.5%;
+ }
+ 
+ *{
+     margin:0px;
+     padding: 0px;
+ }
+ 
+ body{
+     font-family: 'Quicksand', sans-serif;
+     background-color:#f8f6f1;
+
+ }
+ .contenedorGrid{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header"
+                         "nav" 
+                          "main"   
+                          "footer";                         
+  }
+// colores
+$color-fondo: #f8f6f1;
+$color-texto: #323232;

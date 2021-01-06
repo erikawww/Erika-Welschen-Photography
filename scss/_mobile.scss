@@ -1,0 +1,15 @@
+// MEDIA QUERIES
+
+.cabecera {
+    .cabecera__titulo{
+        @media (min-width: 360px) {
+            text-align: center;
+        }
+    }
+	
+}
+main{
+    @media (min-width: 360px) {
+        height: auto;
+    }
+}

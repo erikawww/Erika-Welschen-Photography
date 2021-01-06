@@ -1,0 +1,209 @@
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f8f6f1; }
+
+.contenedorGrid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav"  "main"    "footer"; }
+
+.cabecera {
+  grid-area: header;
+  height: 120px;
+  background-color: #f8f6f1;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center; }
+  .cabecera .cabecera__titulo {
+    color: #323232;
+    font-size: 4rem;
+    font-weight: 400; }
+
+/* NAV BAR */
+nav {
+  grid-area: nav;
+  background-color: #f8f6f1;
+  padding: 15px; }
+  nav ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    font-size: 2rem; }
+    nav ul li a {
+      color: #323232;
+      text-decoration: none; }
+      nav ul li a:hover {
+        color: tomato; }
+
+.navbar-nav {
+  width: 100%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: space-evenly; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #323232; }
+
+.navbar-light .navbar-nav .active > .nav-link {
+  color: tomato; }
+
+.contenido-principal {
+  overflow: hidden;
+  background-color: #f8f6f1;
+  padding: 40px 0px 40px 0px; }
+  .contenido-principal .contenido-principal__subtitulo {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500; }
+  .contenido-principal .contenido-principal__parrafo {
+    font-size: 1.6rem;
+    margin-left: 20px;
+    margin-right: 20px; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
+
+.contenido-contacto {
+  background-color: #f8f6f1;
+  height: 700px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+
+.contenido-box {
+  height: 50px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center; }
+  .contenido-box .contenido-box__subtitulo {
+    font-size: 2.2rem;
+    color: tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+input {
+  margin-bottom: 20px; }
+
+textarea {
+  margin-bottom: 20px;
+  resize: none; }
+
+#textoForm {
+  font-size: 14px; }
+
+label {
+  font-size: 15px; }
+
+.btn {
+  color: #323232;
+  background-color: #fff;
+  font-size: 15px;
+  border: solid 1px;
+  color: tomato;
+  width: 100px;
+  height: 40px;
+  border-radius: 40px; }
+  .btn:hover {
+    background-color: tomato;
+    color: #f8f6f1; }
+
+/* PORTFOLIO */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  user-select: none;
+  padding: 40px 0px 40px 0px; }
+
+.card-cover {
+  position: relative;
+  height: 800px; }
+  .card-cover .card-cover__subtitulo {
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .card-cover .card-cover__parrafo {
+    font-size: 1.6rem; }
+
+.card-cover__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease-in-out; }
+
+.card-cover__body {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+  text-align: center;
+  color: transparent;
+  align-content: center;
+  align-items: center; }
+  .card-cover__body:hover {
+    background-color: rgba(255, 105, 79, 0.9);
+    text-align: center;
+    color: #f8f6f1; }
+  .card-cover__body:hover > img {
+    transform: scale(1.3); }
+
+.pie {
+  grid-area: footer;
+  height: 140px;
+  background-color: #f8f6f1; }
+  .pie .pie__redes {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 20px; }
+    .pie .pie__redes li {
+      text-decoration: none;
+      font-size: 1.7rem; }
+      .pie .pie__redes li a {
+        color: #323232;
+        text-decoration: none; }
+        .pie .pie__redes li a:hover {
+          color: tomato;
+          text-decoration: none; }
+  .pie div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 20px; }
+    .pie div p {
+      font-size: 1.4rem;
+      color: #323232; }
+
+@media (min-width: 360px) {
+  .cabecera .cabecera__titulo {
+    text-align: center; } }
+
+@media (min-width: 360px) {
+  main {
+    height: auto; } }
