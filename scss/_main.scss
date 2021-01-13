@@ -13,29 +13,158 @@
         font-size: 1.6rem;
         margin-left: 20px;
         margin-right: 20px;
+        text-align: justify;
     }
 }
-.container-fluid{
-  padding-left: 0px;
-  padding-right: 0px; 
- }
- .row{
-   margin-right: 0px;
-   margin-left: 0px;
- }
+.img{
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+// PORTFOLIO
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  user-select: none;
+  padding: 40px 0px 40px 0px;
+}
 
+.card-cover {
+  position: relative;
+  height: 800px;
+  a{
+   text-decoration: none;
+  
+.card-cover__subtitulo{
+ font-size: 3rem;
+ text-transform: uppercase;
+}
+}
+.card-cover__parrafo{
+ font-size: 1.6rem;
+}
+
+}
+.card-cover__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+.card-cover__body {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+  text-align: center;
+  color: transparent;
+  align-content: center;
+  align-items: center;
+  &:hover {
+   background-color:rgba(255, 105, 79, 0.90);
+   text-align: center;
+   color: $color-fondo;
+ }
+ &:hover > img {
+   transform: scale(1.3);
+ } 
+}
+// SERVICIOS
+.contenido-servicios{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "recitales prensa book";
+  height: 500px;
+  padding: 40px 0px 40px 0px;
+  grid-gap: 5px;
+  .contenido-servicios__subtitulo{
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: $color-texto;
+  }
+  .contenido-servicios__parrafo{
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    color: $color-texto;
+  }
+  .recitales{
+    grid-area: recitales;
+    background-color: $color-fondo;
+    
+  }
+  .prensa{
+    grid-area: prensa;
+    background-color: $color-fondo;
+  }
+  .book{
+    grid-area: book;
+    background-color: $color-fondo;
+  }
+}
+//SOBRE MI
+.contenido-sobremi{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "bio foto-perfil";
+  grid-gap: 5px;
+  overflow:hidden;
+  background-color: $color-fondo;
+  padding: 40px 0px 40px 0px;
+ .contenido-sobremi__subtitulo{
+      font-size: 3rem;
+      margin-left: 20px;
+      margin-right: 20px;
+      font-weight: 500;
+  }
+  .contenido-sobremi__parrafo{
+      font-size: 1.6rem;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: justify;
+  }
+}
+.bio{
+  grid-area: bio;
+
+  padding:100px;
+  
+}
+.foto-perfil{
+  grid-area: foto-perfil;
+  height: 420px;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  
+}
 // PÁGINA DE CONTACTO
+.formulario-contacto{
+  padding:30px 10px 15px 10px;
+}
 .contenido-contacto{
     background-color: $color-fondo;
     height: 700px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-
-
   }
   .contenido-box{
-    height: 50px;
+    height: 60px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -78,58 +207,15 @@
     border-radius: 40px;
     &:hover{
       background-color: tomato;
-      color: #f8f6f1;
+      color: $color-fondo;
     }
   }
-
-/* PORTFOLIO */
- .cards {
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-   user-select: none;
-   padding: 40px 0px 40px 0px;
- }
- 
- .card-cover {
-   position: relative;
-   height: 800px;
- .card-cover__subtitulo{
-  font-size: 3rem;
-  text-transform: uppercase;
-}
-.card-cover__parrafo{
-  font-size: 1.6rem;
-}
-
- }
- .card-cover__background {
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   position: absolute;
-   z-index: -1;
-   transition: all .3s ease-in-out;
- }
- .card-cover__body {
-   display: grid;
-   position: relative;
-   width: 100%;
-   height: 100%;
-   transition: 0.5s ease;
-   overflow: hidden;
-   text-align: center;
-   color: transparent;
-   align-content: center;
-   align-items: center;
-   &:hover {
-    background-color:rgba(255, 105, 79, 0.90);
-    text-align: center;
-    color: $color-fondo;
-  }
-  &:hover > img {
-    transform: scale(1.3);
-  } 
- }
-
-
-
+// ..
+  .container-fluid{
+    padding-left: 0px;
+    padding-right: 0px; 
+   }
+   .row{
+     margin-right: 0px;
+     margin-left: 0px;
+   }

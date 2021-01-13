@@ -1,3 +1,4 @@
+@import url(baguettebox.js/dist/baguetteBox.min.css);
 html {
   font-size: 62.5%; }
 
@@ -53,6 +54,8 @@ nav {
 
 .navbar-light .navbar-nav .nav-link {
   color: #323232; }
+  .navbar-light .navbar-nav .nav-link:hover {
+    color: tomato; }
 
 .navbar-light .navbar-nav .active > .nav-link {
   color: tomato; }
@@ -69,15 +72,125 @@ nav {
   .contenido-principal .contenido-principal__parrafo {
     font-size: 1.6rem;
     margin-left: 20px;
-    margin-right: 20px; }
+    margin-right: 20px;
+    text-align: justify; }
 
-.container-fluid {
-  padding-left: 0px;
-  padding-right: 0px; }
+.img {
+  height: 800px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden; }
 
-.row {
-  margin-right: 0px;
-  margin-left: 0px; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  user-select: none;
+  padding: 40px 0px 40px 0px; }
+
+.card-cover {
+  position: relative;
+  height: 800px; }
+  .card-cover a {
+    text-decoration: none; }
+    .card-cover a .card-cover__subtitulo {
+      font-size: 3rem;
+      text-transform: uppercase; }
+  .card-cover .card-cover__parrafo {
+    font-size: 1.6rem; }
+
+.card-cover__background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  transition: all .3s ease-in-out; }
+
+.card-cover__body {
+  display: grid;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  overflow: hidden;
+  text-align: center;
+  color: transparent;
+  align-content: center;
+  align-items: center; }
+  .card-cover__body:hover {
+    background-color: rgba(255, 105, 79, 0.9);
+    text-align: center;
+    color: #f8f6f1; }
+  .card-cover__body:hover > img {
+    transform: scale(1.3); }
+
+.contenido-servicios {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "recitales prensa book";
+  height: 500px;
+  padding: 40px 0px 40px 0px;
+  grid-gap: 5px; }
+  .contenido-servicios .contenido-servicios__subtitulo {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #323232; }
+  .contenido-servicios .contenido-servicios__parrafo {
+    font-size: 1.8rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    text-align: justify;
+    color: #323232; }
+  .contenido-servicios .recitales {
+    grid-area: recitales;
+    background-color: #f8f6f1; }
+  .contenido-servicios .prensa {
+    grid-area: prensa;
+    background-color: #f8f6f1; }
+  .contenido-servicios .book {
+    grid-area: book;
+    background-color: #f8f6f1; }
+
+.contenido-sobremi {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "bio foto-perfil";
+  grid-gap: 5px;
+  overflow: hidden;
+  background-color: #f8f6f1;
+  padding: 40px 0px 40px 0px; }
+  .contenido-sobremi .contenido-sobremi__subtitulo {
+    font-size: 3rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: 500; }
+  .contenido-sobremi .contenido-sobremi__parrafo {
+    font-size: 1.6rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: justify; }
+
+.bio {
+  grid-area: bio;
+  padding: 100px; }
+
+.foto-perfil {
+  grid-area: foto-perfil;
+  height: 420px;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  overflow: hidden; }
+
+.formulario-contacto {
+  padding: 30px 10px 15px 10px; }
 
 .contenido-contacto {
   background-color: #f8f6f1;
@@ -87,7 +200,7 @@ nav {
   align-items: center; }
 
 .contenido-box {
-  height: 50px;
+  height: 60px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -130,47 +243,13 @@ label {
     background-color: tomato;
     color: #f8f6f1; }
 
-/* PORTFOLIO */
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
-  user-select: none;
-  padding: 40px 0px 40px 0px; }
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
 
-.card-cover {
-  position: relative;
-  height: 800px; }
-  .card-cover .card-cover__subtitulo {
-    font-size: 3rem;
-    text-transform: uppercase; }
-  .card-cover .card-cover__parrafo {
-    font-size: 1.6rem; }
-
-.card-cover__background {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  z-index: -1;
-  transition: all .3s ease-in-out; }
-
-.card-cover__body {
-  display: grid;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: 0.5s ease;
-  overflow: hidden;
-  text-align: center;
-  color: transparent;
-  align-content: center;
-  align-items: center; }
-  .card-cover__body:hover {
-    background-color: rgba(255, 105, 79, 0.9);
-    text-align: center;
-    color: #f8f6f1; }
-  .card-cover__body:hover > img {
-    transform: scale(1.3); }
+.row {
+  margin-right: 0px;
+  margin-left: 0px; }
 
 .pie {
   grid-area: footer;
@@ -182,15 +261,13 @@ label {
     flex-flow: row wrap;
     justify-content: space-evenly;
     padding: 20px; }
-    .pie .pie__redes li {
+    .pie .pie__redes a {
+      color: #323232;
       text-decoration: none;
-      font-size: 1.7rem; }
-      .pie .pie__redes li a {
-        color: #323232;
+      font-size: 2.2rem; }
+      .pie .pie__redes a:hover {
+        color: tomato;
         text-decoration: none; }
-        .pie .pie__redes li a:hover {
-          color: tomato;
-          text-decoration: none; }
   .pie div {
     display: flex;
     flex-flow: row nowrap;
@@ -204,6 +281,67 @@ label {
   .cabecera .cabecera__titulo {
     text-align: center; } }
 
-@media (min-width: 360px) {
-  main {
-    height: auto; } }
+@media (max-width: 736px) {
+  .img {
+    height: auto;
+    width: auto; } }
+
+@media (max-width: 736px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr; } }
+
+@media (max-width: 736px) {
+  .card-cover {
+    height: 200px;
+    width: auto; } }
+
+@media (max-width: 736px) {
+  .contenido-servicios {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "recitales"  "prensa"  "book"; } }
+
+@media (max-width: 736px) {
+  .contenido-sobremi {
+    height: auto;
+    margin-top: 40px;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "bio" "foto-perfil"; }
+    .contenido-sobremi .bio {
+      grid-area: bio;
+      padding: 0px; }
+    .contenido-sobremi .foto-perfil {
+      height: auto; } }
+
+@media (max-width: 736px) {
+  .contenido-contacto {
+    padding: 20px; } }
+
+html {
+  font-size: 62.5%; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  width: 95%;
+  margin: auto;
+  grid-gap: 10px;
+  padding: 40px 0px 40px 0px;
+  overflow: hidden; }
+  .gallery .gallery__img {
+    width: 100%;
+    height: 300px;
+    vertical-align: top;
+    object-fit: cover;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
+    .gallery .gallery__img:hover {
+      box-shadow: 0 0 4px rgba(255, 99, 71, 0.9); }

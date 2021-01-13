@@ -27,6 +27,9 @@ nav {
   }
   .navbar-light .navbar-nav .nav-link {
     color:#323232;
+    &:hover {
+      color:tomato;
+    }
   }
   .navbar-light .navbar-nav .active>.nav-link  {
     color:tomato;
