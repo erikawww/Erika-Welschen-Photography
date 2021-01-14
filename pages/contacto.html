@@ -55,20 +55,20 @@
                                 </h3>
                             </div>        
                             <div class="formulario-contacto">
-                                <form action="">
+                                <form method="POST" action="../correo.php">
                                     <div class="form-group">
                                         <label for="nombre">Nombre</label>
-                                        <input class="form-control" type="text" id="textoForm" placeholder="Ingresá tu nombre">
-                                    </div>
-                                    <div>
-                                        <label for="mail">Email</label>
-                                        <input class="form-control" type="email" id="textoForm" placeholder="Ingresá tu dirección de email">
+                                        <input class="form-control textoForm" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" id="textoForm" rows="6"  placeholder="Ingresá tu consulta aquí"></textarea>
+                                        <label for="email">Email</label>
+                                        <input class="form-control textoForm" type="email" id="email" name="email" placeholder="Ingresá tu dirección de email">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control textoForm" type="text" id="msg" name="msg" rows="6"  placeholder="Ingresá acá tu consulta por presupuesto, idea o proyecto que te interese realizar conmigo"></textarea>
                                     </div>     
                                     <div class="centrar">
-                                        <button type="submit" class="btn">Enviar</button>
+                                        <input type="submit" class="btn" name="enviar" value="Enviar">
                                     </div> 
                                 </form>
                             </div>

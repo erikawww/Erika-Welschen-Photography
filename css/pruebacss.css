@@ -224,7 +224,7 @@ textarea {
   margin-bottom: 20px;
   resize: none; }
 
-#textoForm {
+.textoForm {
   font-size: 14px; }
 
 label {
