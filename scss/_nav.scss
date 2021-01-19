@@ -14,7 +14,7 @@ nav {
         color: $color-texto;
         text-decoration: none;
         &:hover {
-        color:tomato; 
+        color:$color-orange; 
         }
       }
     }
@@ -26,11 +26,11 @@ nav {
     justify-content: space-evenly;
   }
   .navbar-light .navbar-nav .nav-link {
-    color:#323232;
+    color:$color-texto;
     &:hover {
-      color:tomato;
+      color:$color-orange;
     }
   }
   .navbar-light .navbar-nav .active>.nav-link  {
-    color:tomato;
+    color:$color-orange;
   }

@@ -44,7 +44,7 @@ nav {
       color: #323232;
       text-decoration: none; }
       nav ul li a:hover {
-        color: tomato; }
+        color: #ff6347; }
 
 .navbar-nav {
   width: 100%;
@@ -55,10 +55,10 @@ nav {
 .navbar-light .navbar-nav .nav-link {
   color: #323232; }
   .navbar-light .navbar-nav .nav-link:hover {
-    color: tomato; }
+    color: #ff6347; }
 
 .navbar-light .navbar-nav .active > .nav-link {
-  color: tomato; }
+  color: #ff6347; }
 
 .contenido-principal {
   overflow: hidden;
@@ -207,7 +207,7 @@ nav {
   justify-content: center; }
   .contenido-box .contenido-box__subtitulo {
     font-size: 2.2rem;
-    color: tomato;
+    color: #ff6347;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -235,12 +235,12 @@ label {
   background-color: #fff;
   font-size: 15px;
   border: solid 1px;
-  color: tomato;
+  color: #ff6347;
   width: 100px;
   height: 40px;
   border-radius: 40px; }
   .btn:hover {
-    background-color: tomato;
+    background-color: #ff6347;
     color: #f8f6f1; }
 
 .container-fluid {
@@ -266,7 +266,7 @@ label {
       text-decoration: none;
       font-size: 2.2rem; }
       .pie .pie__redes a:hover {
-        color: tomato;
+        color: #ff6347;
         text-decoration: none; }
   .pie div {
     display: flex;
