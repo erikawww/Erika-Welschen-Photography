@@ -10,7 +10,7 @@
 }
 //Home
 .img{
-    @media (max-width: 736px){
+    @media (max-width: 1200px){
         height: auto;
         width: auto;
     }
@@ -42,7 +42,7 @@
 }
 //Sobre mí
 .contenido-sobremi{
-    @media (max-width: 736px){
+    @media (max-width: 1040px){
         height: auto;
         margin-top: 40px;
         padding: 0px;
