@@ -296,7 +296,7 @@ label {
     height: 200px;
     width: auto; } }
 
-@media (max-width: 736px) {
+@media (max-width: 1003px) {
   .contenido-servicios {
     height: auto;
     display: grid;
