@@ -1,0 +1,106 @@
+
+.title-404{
+    font-size: 64px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.txt-404{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 3.8rem;
+}
+
+// gif
+.gif-404{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    img{
+        height: 300px;
+        width: auto;
+    }
+}
+
+
+// iconos
+.pie__redes{
+    list-style-type: none;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center; 
+    padding: 20px;
+    margin-bottom: 40px;
+    a{
+        color: $color-texto;
+        text-decoration: none;
+        font-size: 3rem;
+        margin: 80px;
+        &:hover{
+            color: $color-orange;
+            text-decoration: none;
+        }
+    }
+}
+
+.main-page{
+    text-decoration: none;
+    color: $color-orange;
+}
+
+// mobile
+
+.gif-404 {
+    @media (max-width: 736px){
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            margin-top: 60px;
+            margin-bottom: 30px;
+            margin-left: 35px;
+            img{
+                height: 200px;
+                width: auto;
+            }
+        }
+    }
+
+.title-404{
+    @media (max-width: 736px){
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}
+.txt-404{
+    @media (max-width: 736px){
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 20px;
+        line-height: 1.8rem;
+        padding: 10px;
+    }
+}
+
+    .pie__redes{
+        list-style-type: none;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center; 
+        padding: 20px;
+        margin-bottom: 40px;
+        a{
+            color: $color-texto;
+            text-decoration: none;
+            font-size: 2.8rem;
+            margin: 40px;
+            &:hover{
+                color: $color-orange;
+                text-decoration: none;
+            }
+        }
+    }

@@ -76,7 +76,7 @@ nav {
     text-align: justify; }
 
 .img {
-  height: 800px;
+  height: 58vh;
   display: flex;
   align-items: flex-end;
   overflow: hidden; }
@@ -89,7 +89,7 @@ nav {
 
 .card-cover {
   position: relative;
-  height: 800px; }
+  height: 58vh; }
   .card-cover a {
     text-decoration: none; }
     .card-cover a .card-cover__subtitulo {
@@ -131,7 +131,8 @@ nav {
   grid-template-areas: "recitales prensa book";
   height: 500px;
   padding: 40px 0px 40px 0px;
-  grid-gap: 5px; }
+  grid-gap: 5px;
+  margin-bottom: 142px; }
   .contenido-servicios .contenido-servicios__subtitulo {
     font-size: 3rem;
     margin-left: 20px;
@@ -148,13 +149,16 @@ nav {
     color: #323232; }
   .contenido-servicios .recitales {
     grid-area: recitales;
-    background-color: #f8f6f1; }
+    background-color: #f8f6f1;
+    padding: 70px; }
   .contenido-servicios .prensa {
     grid-area: prensa;
-    background-color: #f8f6f1; }
+    background-color: #f8f6f1;
+    padding: 70px; }
   .contenido-servicios .book {
     grid-area: book;
-    background-color: #f8f6f1; }
+    background-color: #f8f6f1;
+    padding: 70px; }
 
 .contenido-sobremi {
   display: grid;
@@ -164,7 +168,8 @@ nav {
   grid-gap: 5px;
   overflow: hidden;
   background-color: #f8f6f1;
-  padding: 40px 0px 40px 0px; }
+  padding: 112px 0px 40px 0px;
+  margin-bottom: 70px; }
   .contenido-sobremi .contenido-sobremi__subtitulo {
     font-size: 3rem;
     margin-left: 20px;
@@ -194,7 +199,7 @@ nav {
 
 .contenido-contacto {
   background-color: #f8f6f1;
-  height: 700px;
+  height: 642px;
   display: flex;
   flex-flow: row nowrap;
   align-items: center; }
@@ -319,6 +324,22 @@ label {
   .contenido-contacto {
     padding: 20px; } }
 
+@media (max-width: 763px) {
+  .contenido-servicios {
+    margin-bottom: 0; }
+    .contenido-servicios .recitales {
+      grid-area: recitales;
+      background-color: #f8f6f1;
+      padding: 0; }
+    .contenido-servicios .prensa {
+      grid-area: prensa;
+      background-color: #f8f6f1;
+      padding: 0; }
+    .contenido-servicios .book {
+      grid-area: book;
+      background-color: #f8f6f1;
+      padding: 0; } }
+
 html {
   font-size: 62.5%; }
 
@@ -342,3 +363,88 @@ html {
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2); }
     .gallery .gallery__img:hover {
       box-shadow: 0 0 4px rgba(255, 99, 71, 0.9); }
+
+.title-404 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.txt-404 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 3.8rem; }
+
+.gif-404 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  .gif-404 img {
+    height: 300px;
+    width: auto; }
+
+.pie__redes {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px; }
+  .pie__redes a {
+    color: #323232;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 80px; }
+    .pie__redes a:hover {
+      color: #ff6347;
+      text-decoration: none; }
+
+.main-page {
+  text-decoration: none;
+  color: #ff6347; }
+
+@media (max-width: 736px) {
+  .gif-404 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 35px; }
+    .gif-404 img {
+      height: 200px;
+      width: auto; } }
+
+@media (max-width: 736px) {
+  .title-404 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px; } }
+
+@media (max-width: 736px) {
+  .txt-404 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8rem;
+    padding: 10px; } }
+
+.pie__redes {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px; }
+  .pie__redes a {
+    color: #323232;
+    text-decoration: none;
+    font-size: 2.8rem;
+    margin: 40px; }
+    .pie__redes a:hover {
+      color: #ff6347;
+      text-decoration: none; }

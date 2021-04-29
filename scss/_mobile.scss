@@ -65,3 +65,25 @@
         padding: 20px;
     }
 }
+
+// Servicios
+.contenido-servicios{
+    @media (max-width: 763px){
+        margin-bottom: 0;
+        .recitales{
+            grid-area: recitales;
+            background-color: $color-fondo;
+            padding: 0;
+            }
+            .prensa{
+            grid-area: prensa;
+            background-color: $color-fondo;
+            padding: 0;
+            }
+            .book{
+            grid-area: book;
+            background-color: $color-fondo;
+            padding: 0;
+        }
+    }
+}
