@@ -168,10 +168,11 @@ nav {
   grid-gap: 5px;
   overflow: hidden;
   background-color: #f8f6f1;
-  padding: 112px 0px 40px 0px;
+  padding: 112px 233px 40px 122px;
   margin-bottom: 70px; }
   .contenido-sobremi .contenido-sobremi__subtitulo {
     font-size: 3rem;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
     font-weight: 500; }
@@ -266,7 +267,7 @@ label {
     .pie .pie__redes a {
       color: #323232;
       text-decoration: none;
-      font-size: 2.2rem; }
+      font-size: 2.8rem; }
       .pie .pie__redes a:hover {
         color: #ff6347;
         text-decoration: none; }
@@ -288,6 +289,14 @@ label {
     height: auto;
     width: auto; } }
 
+@media (max-width: 768px) {
+  .contenido-principal {
+    margin-bottom: 130px; } }
+
+@media (max-width: 736px) {
+  .contenido-principal {
+    margin-bottom: 30px; } }
+
 @media (max-width: 736px) {
   .cards {
     display: grid;
@@ -297,6 +306,16 @@ label {
   .card-cover {
     height: 200px;
     width: auto; } }
+
+@media (max-width: 768px) {
+  .cards {
+    padding: 40px 0px 87px 0px; } }
+
+@media (max-width: 768px) {
+  .card-cover__body {
+    width: auto;
+    background-color: rgba(32, 32, 32, 0.7);
+    color: #f8f6f1; } }
 
 @media (max-width: 1003px) {
   .contenido-servicios {
@@ -324,21 +343,46 @@ label {
   .contenido-contacto {
     padding: 20px; } }
 
+@media (max-width: 768px) {
+  .contenido-contacto {
+    padding: 20px;
+    margin-bottom: 77px; } }
+
+@media (max-width: 768px) {
+  .contenido-servicios {
+    margin-bottom: 0; }
+    .contenido-servicios .recitales {
+      padding: 70px 70px 0px 70px; }
+    .contenido-servicios .prensa {
+      padding: 70px 70px 0px 70px; }
+    .contenido-servicios .book {
+      padding: 70px 70px 0px 70px; } }
+
 @media (max-width: 763px) {
   .contenido-servicios {
     margin-bottom: 0; }
     .contenido-servicios .recitales {
       grid-area: recitales;
       background-color: #f8f6f1;
-      padding: 0; }
+      padding: 10px; }
     .contenido-servicios .prensa {
       grid-area: prensa;
       background-color: #f8f6f1;
-      padding: 0; }
+      padding: 10px; }
     .contenido-servicios .book {
       grid-area: book;
       background-color: #f8f6f1;
-      padding: 0; } }
+      padding: 10px; } }
+
+@media (max-width: 763px) {
+  .pie .pie__redes a {
+    color: #323232;
+    font-size: 2.5rem; } }
+
+@media (max-width: 768px) {
+  .pie .pie__redes a {
+    color: #323232;
+    font-size: 2.5rem; } }
 
 html {
   font-size: 62.5%; }
