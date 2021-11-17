@@ -1,15 +1,77 @@
-//HEADER
 .cabecera{
-    grid-area: header;
-    height: 120px;
-    background-color: $color-fondo;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;    
+    padding:30px;
     .cabecera__titulo{
-        color: $color-texto;
+        font-weight: 200;
+        text-align: center;
+        text-transform: uppercase;
         font-size: 4rem;
-        font-weight: 400;
+        a{
+            text-decoration: none;
+            color:$color-texto;
+        }  
+    }
+    .cabecera__btn{
+        display:none;
     }
 }
+
+/*CABECERA MOBILE*/
+.cabecera{
+    @media screen and (max-width: 414px) {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        padding: 20px;
+        transition: background-color 200ms ease-in-out;
+    .cabecera__titulo{
+        text-align: start;
+        font-size: 2rem;
+        width:200px;
+        }
+        span{
+            letter-spacing: 2.1px;
+        }
+    .cabecera__btn{
+        display: flex;
+        color:$color-texto;
+        background-color: transparent;
+        border: none;
+        padding: 8px;
+            .cabecera__btn--menu{
+                width: 34px;
+                height: 34px;
+                color:$color-texto;
+            }
+            .cabecera__btn--close{
+                display:none;
+                width: 34px;
+                height: 34px;
+            }
+        }        
+    }
+}
+
+
+.cabecera.active{
+    background-color:$color-orange;
+    transition: background-color 200ms ease-in-out;
+}
+// MENU BUTTON
+// .cabecera__btn{
+//     @media screen and (max-width: 414px) {
+//         display: block;
+//         color:$color-texto;
+//         background-color: transparent;
+//         border: none;
+//             .cabecera__btn--menu{
+//                 width: 34px;
+//                 height: 34px;
+//                 color:$color-texto;
+//             }
+//             .cabecera__btn--close{
+//                 display:none;
+//                 width: 34px;
+//                 height: 34px;
+//             }
+//     }	
+// }    

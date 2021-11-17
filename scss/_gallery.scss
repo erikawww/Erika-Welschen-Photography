@@ -1,15 +1,6 @@
-// ESTILOS GALERIA
-html {
-    font-size: 62.5%;
- }
- 
- *{
-     margin:0px;
-     padding: 0px;
- }
-
- .gallery{
+.gallery{
     display: grid;
+    grid-area: main;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     width: 95%;
     margin: auto;
@@ -27,4 +18,20 @@ html {
         }
 
     }   
+}
+.gallery-btn{
+    display: none;
+}
+@media screen and (max-width: 414px) {
+    .gallery-btn{
+        background-color:transparent;
+        border: none;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 5px;
+            a{
+                color:$color-texto;
+                font-size: 2.2rem;
+            }
+    }
 }

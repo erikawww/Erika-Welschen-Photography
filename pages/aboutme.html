@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- SEO -->  
     <meta name="keywords" content="fotografía profesional, música en vivo, fotos prensa, músicos">
-    <meta name="description" content="Fotografía de recitales y conciertos en vivo, fotos para prensa y books para profesionales de la música">
-    <!-- icons source --> 
+    <meta name="description" content="Mini bio, sobre mi recorrido en la fotografía profesional">
+    <!-- Fuente iconos --> 
     <script src="https://kit.fontawesome.com/22c562ca68.js" crossorigin="anonymous"></script>
-    <title>Home | Erika Welschen photography</title>
-    <!-- google fonts --> 
+    <title>Sobre mí | Erika Welschen photography</title>
+    <!-- Google Fonts --> 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
     <!-- styles -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <div class="container-fluid">
         <!-- header -->
         <header class="cabecera">
-            <h1 class="cabecera__titulo"><a href="index.html">erika welschen <span>photography</span></a></h1>
+            <h1 class="cabecera__titulo"><a href="../index.html">erika welschen <span>photography</span></a></h1>
             <button class="cabecera__btn">
                 <ion-icon class="cabecera__btn--menu" name="menu-outline"></ion-icon>
                 <ion-icon class="cabecera__btn--close" name="close-outline"></ion-icon>
@@ -30,19 +30,25 @@
         <!-- nav bar -->
         <nav class="navBar row">
             <ul class="navbar__menu">
-                <li><a class="navbar__menu__item" href="pages/portfolio.html">Portfolio</a></li>
-                <li><a class="navbar__menu__item" href="pages/services.html">Servicios</a></li>
-                <li><a class="navbar__menu__item" href="pages/aboutme.html">Sobre mí</a></li>
-                <li><a class="navbar__menu__item" href="pages/contact.html">Contacto</a></li>
+                <li><a class="navbar__menu__item" href="portfolio.html">Portfolio</a></li>
+                <li><a class="navbar__menu__item" href="services.html">Servicios</a></li>
+                <li><a class="navbar__menu__item active" href="aboutme.html">Sobre mí</a></li>
+                <li><a class="navbar__menu__item" href="contact.html">Contacto</a></li>
             </ul>
         </nav>
-        <!-- main content -->
-        <main class="main-content row">
-            <div class="main-content__img">
-                <img src="images/fotohome.jpg">
-            </div>
-        </main>
-        <!-- footer -->
+        <!-- main content -->           
+        <main class="contenido-sobremi row">
+            <div class="contenido-sobremi__bio"> 
+                <h2 class="contenido-sobremi__subtitulo">Un poco sobre mí</h2>
+                <p class="contenido-sobremi__parrafo">Nací y me crie en Santa Fe, Argentina. 
+                    Soy técnica en arreglos musicales egresada de la UNL, y fotógrafa freelance de la escena underground de Santa Fe. <br>
+                    En mi trabajo con la fotografía profesional trato de unir dos de mis intereses que más me movilizan, por eso me dedico a la fotografía de bandas musicales o artistas,  donde trato de transmitir lo mismo que los músicos hacen arriba del escenario.
+                </p>
+            </div>         
+            <div class="foto-perfil">                        
+                <img class="img-fluid" src="../images/perfil_io+.jpg"> 
+            </div>    
+        </main>   
         <footer class="footer row">
             <ul class="footer__rrss">
                 <li><a href="https://www.instagram.com/erikawelschen/?hl=es-la"><i class="fab fa-instagram"></i></a></li>
@@ -55,10 +61,9 @@
         </footer>
     </div>
     <!-- Js -->
-    <script src="js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <!-- icons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+   <script src="../js/app.js"></script>
+   <!-- icons -->
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

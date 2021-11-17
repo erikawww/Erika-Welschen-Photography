@@ -1,9 +1,5 @@
-// FOOTER
-.pie{
-    grid-area: footer;
-    height: 140px;
-    background-color:$color-fondo;
-    .pie__redes{
+.footer{
+    .footer__rrss{
         list-style-type: none;
         display:flex;
         flex-flow: row wrap;
@@ -23,10 +19,47 @@
         display:flex;
         flex-flow: row nowrap;
         justify-content: center; 
-        margin-top: 20px;
-        p{
-            font-size: 1.4rem;
+        margin-top: 5px;
+        .footer__rights{
+            font-size: 1.5rem;
             color: $color-texto
+        }
+    }
+}
+/*FOOTER MOBILE*/
+.footer{
+    @media screen and (max-width: 414px) {
+        // position: relative;
+        // bottom: -42px;
+        .footer__rrss {
+            justify-content: space-around;
+            padding:8px;
+            a{
+                color: $color-texto;
+                text-decoration: none;
+                font-size: 2.4rem;
+            }
+        }
+        div{
+            margin-top:0;
+            .footer__rights{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.footer{
+    @media screen and (max-width: 360px) {
+        .footer__rrss {
+            a{
+                font-size: 1.8rem;
+            }
+        }
+        div{
+            margin-top:0;
+            .footer__rights{
+                font-size: 12px;
+            }
         }
     }
 }

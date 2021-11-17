@@ -1,0 +1,23 @@
+html {
+    font-size: 62.5%;
+ }
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    background-color:#f8f6f1;
+    user-select: none;
+}
+.row {
+  --bs-gutter-x: 0;
+  padding: 0 0 0 0;
+}
+.container-fluid{
+    padding: 0 0 0 0;
+    height: 100vh;
+}
+$color-fondo: #f8f6f1;
+$color-texto: #323232;
+$color-orange: #ff6347
