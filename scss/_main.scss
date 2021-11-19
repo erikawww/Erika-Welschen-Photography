@@ -427,7 +427,7 @@ label{
   height: 40px;
   border-radius: 8px;
   transition: all 150ms ease-in;
-  margin-bottom: 9px;
+  margin-top: 9px;
   &:hover{
     box-shadow: 0 0 7px rgba(255, 99, 71, .9);
     color:$color-fondo;
@@ -507,7 +507,7 @@ width:662px;
         margin-left:0px;
 
         .contenido-contacto__info {
-            padding: 40px 25px 10px 25px;
+            padding:15px 25px 10px 25px;
             text-align: justify;
             width: 100%;
               p{
