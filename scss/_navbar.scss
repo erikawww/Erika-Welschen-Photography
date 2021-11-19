@@ -36,7 +36,7 @@
               height: 0vh;
               background-color: $color-orange;
               padding: 2px;
-              transition: all ease-in-out 100ms;
+              transition: all ease-in-out 200ms;
                   .navbar__menu__item{
                       color:$color-fondo;
                       &:hover {
@@ -52,10 +52,6 @@
 .navbar__menu.active{
   position: absolute;
   height: 56vh;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
-  // align-items: center;
   opacity:1;
   z-index:2;
   transition: all ease-in-out 200ms; 

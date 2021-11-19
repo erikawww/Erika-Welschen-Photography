@@ -35,6 +35,7 @@ const navSlide = () => {
 }
 navSlide();
 
+
 // Galeria baguette box 
 window.addEventListener('load', function() {
     baguetteBox.run('.gallery');

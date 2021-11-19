@@ -99,7 +99,7 @@ body {
     height: 0vh;
     background-color: #ff6347;
     padding: 2px;
-    transition: all ease-in-out 100ms; }
+    transition: all ease-in-out 200ms; }
     .navBar .navbar__menu .navbar__menu__item {
       color: #f8f6f1; }
       .navBar .navbar__menu .navbar__menu__item:hover {
