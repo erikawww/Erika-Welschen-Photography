@@ -393,7 +393,7 @@ body {
     margin-bottom: 10px; }
   .contenido-contacto__info p {
     font-size: 1.6rem;
-    margin-bottom: 22px; }
+    margin-bottom: 10px; }
 
 .contenido-box {
   height: 60px;
@@ -410,7 +410,7 @@ body {
     font-weight: 500; }
 
 textarea {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   resize: none;
   font-size: 1.6rem; }
   textarea::selection {
@@ -433,9 +433,11 @@ label {
   width: 150px;
   height: 40px;
   border-radius: 8px;
-  transition: all 150ms ease-in; }
+  transition: all 150ms ease-in;
+  margin-bottom: 9px; }
   .btn:hover {
-    box-shadow: 0 0 7px rgba(255, 99, 71, 0.9); }
+    box-shadow: 0 0 7px rgba(255, 99, 71, 0.9);
+    color: #f8f6f1; }
 
 .contenido-contacto__inputs {
   display: flex;
@@ -614,3 +616,89 @@ label {
     .gallery-btn a {
       color: #323232;
       font-size: 2.2rem; } }
+
+/*PÁGINA ERROR 404*/
+.title-404 {
+  font-size: 64px;
+  text-align: center;
+  margin-bottom: 30px; }
+
+.txt-404 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 3.8rem; }
+
+.gif-404 {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 30px; }
+  .gif-404 img {
+    height: 300px;
+    width: auto; }
+
+.pie__redes {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px; }
+  .pie__redes a {
+    color: #323232;
+    text-decoration: none;
+    font-size: 3rem;
+    margin: 80px; }
+    .pie__redes a:hover {
+      color: #ff6347;
+      text-decoration: none; }
+
+.main-page {
+  text-decoration: none;
+  color: #ff6347; }
+
+@media (max-width: 736px) {
+  .gif-404 {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    margin-left: 35px; }
+    .gif-404 img {
+      height: 200px;
+      width: auto; } }
+
+@media (max-width: 736px) {
+  .title-404 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px; } }
+
+@media (max-width: 736px) {
+  .txt-404 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.8rem;
+    padding: 10px; } }
+
+.pie__redes {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 20px;
+  margin-bottom: 40px; }
+  .pie__redes a {
+    color: #323232;
+    text-decoration: none;
+    font-size: 2.8rem;
+    margin: 40px; }
+    .pie__redes a:hover {
+      color: #ff6347;
+      text-decoration: none; }

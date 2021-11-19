@@ -42,7 +42,7 @@
                 <img src="../images/yo14.webp" alt="foto contacto">
             </div>
             <div class="contenido-contacto__formulario">
-                <form method="POST" action="correo.php">
+                <form method="POST" data-netlify-recaptcha="true" data-netlify="true">
                     <div class="contenido-contacto__info">
                         <h3 class="">Mandame un mensaje</h3>  
                         <p>Si querés colaborar conmigo, solicitar presupuesto, o si tenés una idea o proyecto que te interese realizar podés dejarme tus datos de contacto y tu mensaje.</p>  
@@ -63,6 +63,7 @@
                     </div>
                     <div class="contenido-contacto__btn">
                         <input type="submit" class="btn" name="enviar" value="Enviar">
+                        <div data-netlify-recaptcha="true"></div>
                     </div>     
                 </form>  
             </div>                
@@ -83,6 +84,5 @@
    <!-- icons -->
    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
 </body>
 </html>
