@@ -31,26 +31,28 @@
         span{
             letter-spacing: 2.1px;
         }
-    .cabecera__btn{
-        display: flex;
-        color:$color-texto;
-        background-color: transparent;
-        border: none;
-        padding: 8px;
-            .cabecera__btn--menu{
-                width: 34px;
-                height: 34px;
-                color:$color-texto;
-            }
-            .cabecera__btn--close{
-                display:none;
-                width: 34px;
-                height: 34px;
-            }
-        }        
+    // .cabecera__btn{
+    //     display: flex;
+    //     color:$color-texto;
+    //     background-color: transparent;
+    //     border: none;
+    //     padding: 8px;
+    //         .cabecera__btn--menu{
+    //             width: 34px;
+    //             height: 34px;
+    //             color:$color-texto;
+    //         }
+    //         .cabecera__btn--close{
+    //             display:none;
+    //             width: 34px;
+    //             height: 34px;
+    //         }
+    //     }        
     }
 }
-
+.holaa{
+    width: 100px;
+}
 
 .cabecera.active{
     background-color:$color-orange;
