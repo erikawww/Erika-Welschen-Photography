@@ -543,28 +543,28 @@ label {
     outline: none; }
 
 @media screen and (max-width: 1440px) {
-  .contenido-contacto__foto {
+  .contenido-contacto .contenido-contacto__foto {
+    display: none; }
+  .contenido-contacto .contenido-contacto__formulario {
+    margin-left: 0;
+    display: flex;
     height: 57vh;
-    width: 736px; }
-    .contenido-contacto__foto img {
-      width: 736px; }
-  .contenido-contacto__formulario {
-    height: 57vh;
-    margin-left: 40px; }
-    .contenido-contacto__formulario .contenido-contacto__info {
-      width: 622px; }
-      .contenido-contacto__formulario .contenido-contacto__info h3 {
-        font-size: 2.5rem; }
-    .contenido-contacto__formulario .contenido-contacto__inputs {
-      width: 665px; }
-    .contenido-contacto__formulario .contenido-contacto__message {
-      width: 575px; }
-      .contenido-contacto__formulario .contenido-contacto__message #msg {
-        height: 80px; } }
+    justify-content: space-evenly;
+    align-items: center; }
+    .contenido-contacto .contenido-contacto__formulario .contenido-contacto__info {
+      margin: 43px 70px 175px 50px;
+      padding: 50px;
+      text-align: justify; }
+    .contenido-contacto .contenido-contacto__formulario .contenido-contacto__message {
+      margin-bottom: 30px; }
+      .contenido-contacto .contenido-contacto__formulario .contenido-contacto__message #msg {
+        height: 60px; } }
 
 @media screen and (max-width: 768px) {
   .contenido-contacto .contenido-contacto__foto {
-    display: none; } }
+    display: none; }
+  .contenido-contacto .contenido-contacto__formulario {
+    flex-direction: column; } }
 
 @media screen and (max-width: 414px) {
   .contenido-contacto {
@@ -574,11 +574,13 @@ label {
     .contenido-contacto .contenido-contacto__formulario {
       padding: 0;
       margin-left: 0px;
-      height: 85vh; }
+      height: auto;
+      flex-direction: column; }
       .contenido-contacto .contenido-contacto__formulario .contenido-contacto__info {
         padding: 15px 25px 10px 25px;
         text-align: justify;
-        width: 100%; }
+        width: 100%;
+        margin: 0 0 0 0; }
         .contenido-contacto .contenido-contacto__formulario .contenido-contacto__info p {
           font-size: 1.5rem; }
     .contenido-contacto .contenido-contacto__inputs {
@@ -591,7 +593,8 @@ label {
         width: 88vw; }
     .contenido-contacto .contenido-contacto__message {
       width: 88vw;
-      margin-left: 23px; }
+      margin-left: 23px;
+      margin-bottom: 50px; }
       .contenido-contacto .contenido-contacto__message #msg {
         height: 90px;
         width: 100%; }
