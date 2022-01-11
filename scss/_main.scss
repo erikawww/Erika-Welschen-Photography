@@ -381,36 +381,16 @@ padding: 30px 0px 30px 0px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 2fr;
-    .contenido-sobremi__bio {
-      padding: 0px 20px 40px 20px;
-      width: 759px;
-    }
-    .foto-perfil{
-      height: 45vh;
-        img{
-          width: 100%;
-        }
-    }
+      .contenido-sobremi__bio {
+        padding: 20px 50px;
+        width: 100%;
+      }
+      .foto-perfil{
+        height: 45vh;
+        width: 100%;
+      }
   }
 }
-// .contenido-sobremi{
-// @media screen and(max-width: 1024px){
-//     // padding: 40px 0 40px 0;
-//     display: grid;
-//     grid-template-columns: 1fr;
-//     grid-template-rows: 2fr;
-// }
-// .contenido-sobremi__bio {
-//   padding: 40px 20px 40px 20px;
-//   width: 1000px;
-// }
-// .foto-perfil{
-//   height: 60vh;
-//     img{
-//       width: 100%;
-//     }
-// }
-// }
 // SOBREMI Mobile
 .contenido-sobremi{
 @media screen and(max-width: 414px){
@@ -422,10 +402,10 @@ padding: 30px 0px 30px 0px;
         padding:0px 0px 0px 0px; 
         max-width: 100vw;
             .contenido-sobremi__subtitulo{
-                margin: 10px 20px 12px 20px;
+                margin: 0 0 8px 17px;
             }
             .contenido-sobremi__parrafo{
-                margin: 25px 20px 25px 20px;
+                margin: 0 20px 20px 20px;
             }  
     }
     .foto-perfil{
@@ -474,7 +454,7 @@ margin-left: 50px;
 // padding: 70px 115px 70px 40px;
 }
 .contenido-contacto__info{
-width: 700px;
+  width: 700px;
   h3{
     font-size: 2.8rem;
     font-weight: 500;
@@ -601,7 +581,7 @@ width:662px;
     justify-content: space-evenly;
     align-items: center;
       .contenido-contacto__info{
-        margin: 43px 70px 175px 50px;
+        margin: 43px 70px 175px 30px;
         padding: 50px;
         text-align: justify;
       }
@@ -623,6 +603,13 @@ width:662px;
       }
       .contenido-contacto__formulario{
         flex-direction: column;
+        // .contenido-contacto__info{
+        //   // padding: 50px;
+        //   // margin: 0 0 0 0;
+        //     // form{
+        //     //   width: 90%;
+        //     // }
+        // }
     }
   }
 }
@@ -648,34 +635,35 @@ width:662px;
                   font-size: 1.5rem;
                 }
               }
-          }   
-          .contenido-contacto__inputs {
-              display:flex;
-              flex-flow:column nowrap;
-              justify-content: center;
-              padding: 0 25px 0 25px;
-                  .contenido-contacto__input{
-                      margin-right:0px;
-                      width:88vw;
-              }  
-          }
-          .contenido-contacto__message{
-              width:88vw;
-              margin-left:23px;
-              margin-bottom:50px;
-              #msg{
-                height:90px;
-                width: 100%;
+              .contenido-contacto__inputs {
+                display:flex;
+                flex-flow:column nowrap;
+                justify-content: center;
+                padding: 0 25px 0 25px;
+                    .contenido-contacto__input{
+                        margin-right:0px;
+                        width:88vw;
+                }  
+            }
+            .contenido-contacto__message{
+                width:88vw;
+                margin-left:23px;
+                margin-bottom:50px;
+                #msg{
+                  height:90px;
+                  width: 100%;
+              } 
             } 
-          } 
-          .contenido-contacto__btn{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .btn{
-              width: 90vw;
-          }  
-        }
+            .contenido-contacto__btn{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .btn{
+                width: 90vw;
+            }  
+          }
+        }   
+      
   }
 }
 // Tiny devices
